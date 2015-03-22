@@ -1,6 +1,10 @@
-## This function creates a cache with the inverse of a square matrix stored in the global environment. This function is useful in avoiding repeated inverse calculations of lengthy matrices which can be time consuming. The cache can be accessed if the matrix whose inverse needs to be calculated is equal to the one that is stored in the global environment.
+## This function creates a cache with the inverse of a square matrix stored in the global environment. This 
+## function is useful in avoiding repeated inverse calculations of lengthy matrices which can be time consuming.
+## The cache can be accessed if the matrix whose inverse needs to be calculated is equal to the one that is 
+## stored in the global environment.
 
-## makeCacheMatrix function solves for the inverse of the matrix and stores the cache in the global environment as variable ‘m’.
+## makeCacheMatrix function solves for the inverse of the matrix and stores the cache in the global 
+## environment as variable ‘m’.
 
 makeCacheMatrix <- function(x = matrix()) {
 	    m <- NULL
@@ -18,7 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve accesses the inverse of matrix m from the global environment and returns the inverse matrix without performing time consuming calculations. 
+## cacheSolve accesses the inverse of matrix m from the global environment and returns the inverse 
+## matrix without performing time consuming calculations. 
 
 cacheSolve <- function(x, ...) {
             m <- x$getinverse()
